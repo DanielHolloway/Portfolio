@@ -13,3 +13,9 @@ phases:
  post_build:
    commands:
      - echo "post_build step"
+artifacts:
+  files:
+    - index.html
+    - package.json
+    - node_modules/*
+    - images/
