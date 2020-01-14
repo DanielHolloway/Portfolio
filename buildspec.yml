@@ -11,14 +11,14 @@ phases:
  build:
    commands:
      - echo "build step"
-     - aws s3 sync --delete . "s3://www.danielholloway.me/?region=us-east-2"
+     #- aws s3 sync --delete . "s3://www.danielholloway.me/?region=us-east-2"
  post_build:
    commands:
      - echo "post_build step"
 artifacts:
-  files:
-    - index.html
-    - package.json
-    - node_modules/*
-    - images/
-    - css/
+  files: *
+    # - index.html
+    # - package.json
+    # - node_modules/*
+    # - images/
+    # - css/
